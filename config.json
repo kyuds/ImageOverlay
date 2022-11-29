@@ -7,7 +7,7 @@
         "default": "1"
     }, 
     "outer": {
-        "labcoat": "1",
+        "labcoat": "2",
         "hoodie": "5",
         "None": "10"
     },
