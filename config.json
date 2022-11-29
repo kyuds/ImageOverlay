@@ -1,0 +1,18 @@
+{
+    "ground": {
+        "skyblue": "1",
+        "yellow": "1"
+    }, 
+    "body": {
+        "default": "1"
+    }, 
+    "outer": {
+        "labcoat": "1",
+        "hoodie": "5",
+        "None": "10"
+    },
+    "dec": {
+        "goggles": "1",
+        "None": "10"
+    }
+}
