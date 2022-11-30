@@ -7,11 +7,11 @@ from datetime import datetime
 
 def overlay(img, ovrly):
     row, col, _ = img.shape
-    
     for r in range(row):
         for c in range(col):
             if ovrly[r][c][3] == 0:
                 continue
+            
             a = float(ovrly[r][c][3] / 255.0)
             img[r][c] = a * ovrly[r][c] + (1 - a) * img[r][c]
 
@@ -19,14 +19,12 @@ def overlay(img, ovrly):
 
 def create(data):
     img = None
-
     for layer, item in data:
         path = "assets/" + str(layer) + "/" + item + ".png"
 
         if layer == 0:
             img = cv2.imread(path, cv2.IMREAD_UNCHANGED)
             continue
-
         if item == "None":
             continue
         
