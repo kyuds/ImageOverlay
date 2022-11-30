@@ -44,6 +44,8 @@ def main():
     with open('config.json') as file:
         data = json.load(file)
 
+    generated = set()
+
     for _ in range(args.n):
         # random generation
         config = []
@@ -52,6 +54,11 @@ def main():
             v = list(data[layer].keys())
             config.append((int(layer), random.choices(v, weights=w, k=1)[0]))
         config.sort(key=lambda x: x[0])
+
+        hashable = tuple(config)
+        if hashable in generated:
+            continue
+        generated.add(hashable)
 
         # write image result
         nft = create(config)
