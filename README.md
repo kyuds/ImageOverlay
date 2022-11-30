@@ -3,7 +3,7 @@
 ### Getting Started
 Clone the repo by running the following command:
 ```
-git clone https://github.com/kyuds/ImageOverlay.git
+git clone https://github.com/kyuds/imageoverlay.git
 ```
 Create a new anaconda environment to install packages such as OpenCV and NumPy. 
 
