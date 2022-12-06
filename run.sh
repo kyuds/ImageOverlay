@@ -9,6 +9,4 @@ if [[ ! $number ]] && [[ ! $fail ]]; then
     python generate.py
 elif [[ ! $fail ]]; then
     python generate.py --n $number
-elif [[ ! $number ]]; then
-    python generate.py --f $fail
 fi
