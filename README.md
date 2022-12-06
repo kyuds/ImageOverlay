@@ -13,7 +13,7 @@ The python program parses the JSON config file. Note that the weights are relati
 ### Running
 You can either run using the python command or using the shell script provided. Examples are below:
 ```
-python3 generate.py --n 4
+python3 generate.py --n 4 --f 1000
 ```
 ```
 ./run.sh 5
